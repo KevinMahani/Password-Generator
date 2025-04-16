@@ -3,21 +3,27 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="random-password-generator">
-            <div class="unpopulated-state">
-                <h1>Generate a <br><span> random password </span></h1>
-                <p>Never use an insecure password again.</p>
-                <button onclick="generate()">Generate passwords</button>
-                <div class="Box"></div>
-                <div class="showbox">
-                    <div id="boxleft"></div>
-                    <div id="boxright"></div>
-                </div>
-                <div class="copied-message" id="copiedMessage">Copied to clipboard!</div>
+        <div class="main-cont">
+            <div id="up-cont">
+                <h1>Metric/Imperial Unit Conversion</h1>
+                <input type="text" id="inpt-box" placeholder="Enter number">
+                <button id="convert-btn">Convert</button>
             </div>
+    
+            <div class="results-wrapper" id="result-cont">
+                <div class="conv-cont">Length (Meter/Feet)
+                    <p class="sup-text">${num} meters = ${meters} feet | ${num} feet = ${feet} meters</p>
+                </div>
+                <div class="conv-cont">Volume (Liters/Gallons)
+                    <p class="sup-text">${num} liters = ${liters} gallons | ${num} gallons = ${gallons} liters</p>
+                </div>
+                <div class="conv-cont">Mass (Kilograms/Pounds)
+                    <p class="sup-text">${num} kilos = ${kilos} pounds | ${num} pounds = ${pounds} kilos</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
-
-
-
