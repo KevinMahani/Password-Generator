@@ -3,27 +3,21 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="main-cont">
-            <div id="up-cont">
-                <h1>Metric/Imperial Unit Conversion</h1>
-                <input type="text" id="inpt-box" placeholder="Enter number">
-                <button id="convert-btn">Convert</button>
+        <div class="random-password-generator">
+            <div class="unpopulated-state">
+                <h1>Generate a <br><span> random password </span></h1>
+                <p>Never use an insecure password again.</p>
+                <button onclick="generate()">Generate passwords</button>
+                <div class="Box"></div>
+                <div class="showbox">
+                    <div id="boxleft"></div>
+                    <div id="boxright"></div>
+                </div>
+                <div class="copied-message" id="copiedMessage">Copied to clipboard!</div>
             </div>
-    
-            <div class="results-wrapper" id="result-cont">
-                <div class="conv-cont">Length (Meter/Feet)
-                    <p class="sup-text">0 meters = 0 feet | 0 feet = 0 meters</p>
-                </div>
-                <div class="conv-cont">Volume (Liters/Gallons)
-                    <p class="sup-text">0 liters = 0 gallons | 0 gallons = 0 liters</p>
-                </div>
-                <div class="conv-cont">Mass (Kilograms/Pounds)
-                    <p class="sup-text">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
-                </div>
-            </div>
-        </div>
-
-        </div>
         <script src="index.js"></script>
     </body>
 </html>
+
+
+
